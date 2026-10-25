@@ -1,0 +1,158 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+.container {
+  width: min(800px, 92%);
+  margin: 30px auto;
+  display: grid;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #00000012;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+.count {
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  color: #2563eb;
+  margin: 20px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 11px 16px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.reset {
+  background: #64748b;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.task-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.task-count {
+  color: #64748b;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.empty {
+  text-align: center;
+  color: #64748b;
+  padding: 20px 0;
+}
+
+.task-list {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.task-item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-wrap: anywhere;
+}
+
+.task-item label input {
+  flex-shrink: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.delete {
+  background: #dc2626;
+  flex-shrink: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 18px;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form button {
+    width: 100%;
+  }
+}
