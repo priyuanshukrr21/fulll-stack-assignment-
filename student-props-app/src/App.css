@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 329f81d2c526b6b50897aa306050cfc23907c7fb
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +14,7 @@ body {
   color: #1e293b;
 }
 
+<<<<<<< HEAD
 .app {
   min-height: 100vh;
 }
@@ -23,10 +27,21 @@ header {
 }
 
 header h1 {
+=======
+.header {
+  background: #2563eb;
+  color: white;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.header h1 {
+>>>>>>> 329f81d2c526b6b50897aa306050cfc23907c7fb
   margin-bottom: 10px;
 }
 
 .container {
+<<<<<<< HEAD
   width: min(800px, 92%);
   margin: 30px auto;
   display: grid;
@@ -34,10 +49,29 @@ header h1 {
 }
 
 .card {
+=======
+  width: min(1000px, 92%);
+  margin: 35px auto;
+}
+
+.container > h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+>>>>>>> 329f81d2c526b6b50897aa306050cfc23907c7fb
   background: white;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px #00000012;
+<<<<<<< HEAD
 }
 
 .card h2 {
@@ -156,3 +190,69 @@ footer {
     width: 100%;
   }
 }
+=======
+  overflow-wrap: anywhere;
+  transition: transform 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #2563eb;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0 auto 15px;
+}
+
+.student-card h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.student-card p {
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 13px;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  background: #e2e8f0;
+}
+
+@media (max-width: 750px) {
+  .student-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .student-list {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+}
+>>>>>>> 329f81d2c526b6b50897aa306050cfc23907c7fb
